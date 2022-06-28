@@ -64,7 +64,6 @@ sklearn==0.0
 SQLAlchemy==1.4.37
 systemd-python==234
 threadpoolctl==3.1.0
-ubuntu-drivers-common==0.0.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.25.8
