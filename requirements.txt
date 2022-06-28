@@ -1,5 +1,4 @@
 blinker==1.4
-Brlapi==0.7.0
 certifi==2019.11.28
 chardet==3.0.4
 cliapp==1.20180812.1
