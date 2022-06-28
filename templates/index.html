@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{%block head %}
+<title>NIDS</title>
+{%endblock%}
+
+{%block body %}
+    <div class="scroller">
+        <div class="nav-container">
+            
+            <header>
+                <div class="top">
+                    <img src="{{url_for('static',filename='img/ufavicon.png')}}" width="137px" height ="90px">
+                </div>
+
+                <!-- <a href="#" class="logo">NIDS</a> -->
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        
+                        <li><a href="#predict">Predict</a></li>
+                    </ul>
+                </nav>
+            </header>   
+        </div>
+
+        <div class="hero">
+            <svg class="circles" width="791" height="936" viewBox="0 0 791 936" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.8">
+                <circle cx="654.5" cy="281.5" r="654.5" fill="#091F40"/>
+                <circle cx="656.5" cy="283.5" r="478.5" fill="#09244B"/>
+                <circle cx="656.397" cy="283.397" r="311.125" fill="#0E2D5A"/>
+                <circle cx="654.5" cy="281.5" r="180.225" fill="#0D3570"/>
+                </g>
+            </svg>
+
+            <div class="outer">
+                <div class="content">
+                    <p class="pname">NETWORK INTRUSION DETECTION</p>
+                    <p class="forp">For cyber securty using machine learning</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="about-body">
+            <h1>About </h1>
+            <p>Intrusion detection is defined as the process of monitoring the events occurring in a computer system or network. An IDS detects all kinds of malicious network traffic that cannot be detected by a firewall such as network attacks against vulnerable services, data driven attacks on applications,unauthorised logins and access to sensitive files. IDS can not only separate normal network data from attack data, but also classify attack types. Therefore an IDS must classify a given set of network packets as normal or attack.</p>
+            </div>                   
+        </div>
+        
+    <div id="predict" style="width:100%;height:100vh;text-align:center;display:flex;justify-content:center;align-items: center;flex-direction: column;">
+        <h1>Network Intrusion Detection..</h1> 
+        <p style="color:white;"> Insert your CSV file and then download the Result
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="data_file" class="btn btn-block"/>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    </div>
+        
+        <!-- <a id="projects">
+            <div class="projects">
+                <p class="heading">Give your input here👇!</p>
+                
+            </div>
+        </a> -->
+        <!-- <div>
+            <h1>Network Intrusion Detection..</h1>
+                </br>
+                </br>
+                <p> Insert your CSV file and then download the Result
+                <form action="/transform" method="post" enctype="multipart/form-data">
+                    <input type="file" name="data_file" class="btn btn-block"/>
+                    </br>
+                    </br>
+                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                </form>
+        </div> -->
+    </div>
+
+{%endblock%}

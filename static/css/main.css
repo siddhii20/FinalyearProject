@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+:root {
+  --bg: #0a192f;
+  --lightblue: #C5EAFF;
+  --cyan: #15CBCB;
+  --blue: #2D93BA;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "arial";
+  background-color: var(--bg) !important;
+  scroll-behavior: smooth;
+}
+
+header .logo {
+
+    color: #2D93BA;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.scroller {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-size: 50px;
+  background: -webkit-linear-gradient(#eee, #2D93BA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(1, 83, 115, 0.1882352941);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+.nav-container a {
+  color: #A6E1FA;
+}
+
+.heading {
+  color: var(--cyan);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 1.3rem;
+  position: relative;
+}
+
+header {
+  background: #0a172c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header nav {
+  padding: 2rem;
+  float: right;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0 1rem;
+}
+@media (max-width: 450px) {
+  header nav ul a {
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+header nav ul a:hover {
+  border: solid var(--cyan) 1px;
+}
+@media (max-width: 450px) {
+  header nav {
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+.hero .circles {
+  top: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  transform: translateY(-30%);
+}
+.hero .outer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .outer .content {
+  padding: 10% 10% ;
+  padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: auto;
+  font-size: 0.5rem;
+}
+.hero .outer .content .pname {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--cyan);
+}
+.hero .outer .content .forp {
+  font-size: 2rem;
+  margin-top: -10px;
+  opacity: 80%;
+}
+.hero .outer .content p {
+  color: var(--lightblue);
+}
+
+
+#about{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: var(--lightblue); 
+    font-size: 1.4rem;
+    padding-left:5rem;  
+    height:100vh;
+    background-image:url("{{url_for('static',filename='img/ufavicon.png')}}");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: 100% 100%;
+}
+#about .about-body h1{
+
+}
+#about .about-body{
+    width:34%;
+}
+
+@media (max-width: 1080px) {
+  
+}
+/* #predict{
+  width:100%;
+} */
+
+
+
