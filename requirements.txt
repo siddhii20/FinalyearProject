@@ -67,5 +67,4 @@ threadpoolctl==3.1.0
 urllib3==1.25.8
 wadllib==1.3.3
 Werkzeug==2.1.2
-xkit==0.0.0
 zipp==3.8.0
